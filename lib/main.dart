@@ -37,210 +37,46 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          Center(
             child: Container(
-              width: 600,
-              height: 60,
+              margin: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(3.0),
+              width: 140,
+              height: 140,
               decoration: BoxDecoration(
-                  color: Colors.green, borderRadius: BorderRadius.circular(10)),
-              child: Row(
-                children: [
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      width: 30,
-                      height: 30,
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 13, 15, 13),
-                          borderRadius: BorderRadius.circular(20)),
-                      child: const Icon(
-                        Icons.check,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  const Text("Servey",
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold))
-                ],
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(80),
+                  border: Border.all(color: Colors.black)),
+              child: Icon(
+                Icons.check,
+                color: Colors.white,
+                size: 100,
               ),
             ),
           ),
-          const SizedBox(
-            height: 0.6,
-          ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-                width: 600,
-                height: 60,
-                decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Row(
-                  children: [
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 13, 15, 13),
-                            borderRadius: BorderRadius.circular(20)),
-                        child: const Icon(
-                          Icons.check,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Text("Daily Surveys",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold))
-                  ],
-                )),
+            padding: const EdgeInsets.all(20),
+            child: Text(
+              "Congratulations",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
+            ),
           ),
-          const SizedBox(
-            height: 0.6,
-          ),
+          Text("Your account is already to use."),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(50),
             child: Container(
-                width: 600,
-                height: 60,
-                decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Row(
-                  children: [
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 13, 15, 13),
-                            borderRadius: BorderRadius.circular(20)),
-                        child: const Icon(
-                          Icons.check,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Text("Zapper's Rewords",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold))
-                  ],
-                )),
-          ),
-          const SizedBox(
-            height: 0.6,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              width: 600,
-              height: 60,
+              width: 350,
+              height: 50,
               decoration: BoxDecoration(
-                  color: Colors.green, borderRadius: BorderRadius.circular(10)),
-              child: Row(
-                children: [
-                  const SizedBox(
-                    width: 20,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      width: 30,
-                      height: 30,
-                      decoration: BoxDecoration(
-                          color: const Color.fromARGB(255, 13, 15, 13),
-                          borderRadius: BorderRadius.circular(20)),
-                      child: const Icon(
-                        Icons.check,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 15,
-                  ),
-                  const Text("Reference",
-                      style: TextStyle(
-                          color: Colors.white, fontWeight: FontWeight.bold))
-                ],
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(20)),
+              child: Center(
+                child: Text(
+                  "Go to Home",
+                  style: TextStyle(
+                      color: Colors.white, fontWeight: FontWeight.bold),
+                ),
               ),
-            ),
-          ),
-          const SizedBox(
-            height: 0.6,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-                width: 600,
-                height: 60,
-                decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(10)),
-                child: Row(
-                  children: [
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 30,
-                        height: 30,
-                        decoration: BoxDecoration(
-                            color: const Color.fromARGB(255, 13, 15, 13),
-                            borderRadius: BorderRadius.circular(20)),
-                        child: const Icon(
-                          Icons.check,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Text("Daily Checking",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold))
-                  ],
-                )),
-          ),
-          Text(
-            "This are all ways you can earn in Zap Surveys!",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
-            ),
-          ),
-          Text(
-            "Our #1 tip for new Zappers is to make sure to at least complete your Daily Survey every day to maximize earnings.",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
             ),
           ),
         ],
