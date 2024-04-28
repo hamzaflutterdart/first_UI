@@ -34,104 +34,217 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
-
-      body: Container(
-        width: MediaQuery.of(context).size.width * 0.9,
-        height: 80,
-        decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(10)),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            MyTabBar(
-              title: 'Follow',
-              icon: Icon(Icons.notifications),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              width: 600,
+              height: 60,
+              decoration: BoxDecoration(
+                  color: Colors.green, borderRadius: BorderRadius.circular(10)),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 13, 15, 13),
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Icon(
+                        Icons.check,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  const Text("Servey",
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold))
+                ],
+              ),
             ),
-            MyTabBar(
-              title: 'Message',
-              icon: Icon(Icons.message),
+          ),
+          const SizedBox(
+            height: 0.6,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+                width: 600,
+                height: 60,
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  children: [
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 13, 15, 13),
+                            borderRadius: BorderRadius.circular(20)),
+                        child: const Icon(
+                          Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    const Text("Daily Surveys",
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold))
+                  ],
+                )),
+          ),
+          const SizedBox(
+            height: 0.6,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+                width: 600,
+                height: 60,
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  children: [
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 13, 15, 13),
+                            borderRadius: BorderRadius.circular(20)),
+                        child: const Icon(
+                          Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    const Text("Zapper's Rewords",
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold))
+                  ],
+                )),
+          ),
+          const SizedBox(
+            height: 0.6,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+              width: 600,
+              height: 60,
+              decoration: BoxDecoration(
+                  color: Colors.green, borderRadius: BorderRadius.circular(10)),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 13, 15, 13),
+                          borderRadius: BorderRadius.circular(20)),
+                      child: const Icon(
+                        Icons.check,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15,
+                  ),
+                  const Text("Reference",
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold))
+                ],
+              ),
             ),
-            MyTabBar(
-              title: 'Favorite',
-              icon: Icon(Icons.favorite),
+          ),
+          const SizedBox(
+            height: 0.6,
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(
+                width: 600,
+                height: 60,
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  children: [
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                            color: const Color.fromARGB(255, 13, 15, 13),
+                            borderRadius: BorderRadius.circular(20)),
+                        child: const Icon(
+                          Icons.check,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    const Text("Daily Checking",
+                        style: TextStyle(
+                            color: Colors.white, fontWeight: FontWeight.bold))
+                  ],
+                )),
+          ),
+          Text(
+            "This are all ways you can earn in Zap Surveys!",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
             ),
-          ],
-        ),
+          ),
+          Text(
+            "Our #1 tip for new Zappers is to make sure to at least complete your Daily Survey every day to maximize earnings.",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ],
       ),
-
-      // body: Container(
-      //     width: 400,
-      //     height: 50,
-      //     decoration: BoxDecoration(
-      //         color: Colors.white, borderRadius: BorderRadius.circular(20)),
-      //     child: Row(
-      //       mainAxisAlignment: MainAxisAlignment.spaceAround,
-      //       children: [
-      //         Column(
-      //           children: [
-      //             Container(
-      //               width: 30,
-      //               height: 30,
-      //               decoration: BoxDecoration(
-      //                   color: Colors.amber.shade200,
-      //                   borderRadius: BorderRadius.circular(50)),
-      //               child: Icon(Icons.notifications),
-      //             ),
-      //             Text('Follow')
-      //           ],
-      //         ),
-      //         Column(
-      //           children: [
-      //             Container(
-      //               width: 30,
-      //               height: 30,
-      //               decoration: BoxDecoration(
-      //                   color: Colors.amber.shade200,
-      //                   borderRadius: BorderRadius.circular(50)),
-      //               child: Icon(Icons.message),
-      //             ),
-      //             Text('Message')
-      //           ],
-      //         ),
-      //         Column(
-      //           children: [
-      //             Container(
-      //               width: 30,
-      //               height: 30,
-      //               decoration: BoxDecoration(
-      //                   color: Colors.amber.shade200,
-      //                   borderRadius: BorderRadius.circular(50)),
-      //               child: Icon(Icons.favorite),
-      //             ),
-      //             Text('Favorite')
-      //           ],
-      //         )
-      //       ],
-      //     )),
-    );
-  }
-}
-
-class MyTabBar extends StatelessWidget {
-  final String title;
-  final Widget icon;
-  const MyTabBar({super.key, required this.title, required this.icon});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        IconButton(
-            style: ButtonStyle(
-                backgroundColor:
-                    MaterialStatePropertyAll(Colors.amber.shade200)),
-            hoverColor: Colors.orange,
-            padding: EdgeInsets.all(10),
-            onPressed: () {},
-            icon: icon),
-        Text(title),
-      ],
     );
   }
 }
