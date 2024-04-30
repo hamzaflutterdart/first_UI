@@ -34,52 +34,92 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Container(
-              margin: const EdgeInsets.all(15.0),
-              padding: const EdgeInsets.all(3.0),
-              width: 140,
-              height: 140,
-              decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(80),
-                  border: Border.all(color: Colors.black)),
-              child: Icon(
-                Icons.check,
-                color: Colors.white,
-                size: 100,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20),
-            child: Text(
-              "Congratulations",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50),
-            ),
-          ),
-          Text("Your account is already to use."),
-          Padding(
-            padding: const EdgeInsets.all(50),
-            child: Container(
-              width: 350,
-              height: 50,
-              decoration: BoxDecoration(
-                  color: Colors.yellow,
-                  borderRadius: BorderRadius.circular(20)),
-              child: Center(
+      backgroundColor: Color.fromARGB(255, 155, 155, 152),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+                child: CircleAvatar(
+                    radius: 60,
+                    backgroundImage: NetworkImage('images/images (1).jpg'))),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  "Go to Home",
+                  'HAMZA SHAHAB',
                   style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
                 ),
               ),
             ),
-          ),
-        ],
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+                decoration: TextDecoration.underline,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Container(
+                height: 40,
+                decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Icon(
+                      Icons.phone,
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Text(
+                      '+23493890008',
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: Container(
+                height: 40,
+                decoration: BoxDecoration(
+                    color: Colors.amber,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Icon(
+                      Icons.email,
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Text(
+                      'KHAN@gmail.com',
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
